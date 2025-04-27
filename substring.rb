@@ -14,7 +14,6 @@
 def substring(str, dictionary)
   result_hash = Hash.new(0)
   working_array = str.downcase.split(" ")
-  p working_array
   dictionary.each do |dic_str|
     working_array.each do |str_to_check|
       if str_to_check.include?(dic_str.downcase)
@@ -22,6 +21,5 @@ def substring(str, dictionary)
       end
     end
   end
-  p result_hash
   return result_hash
 end
